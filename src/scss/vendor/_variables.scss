@@ -1,0 +1,17 @@
+$fontFamily: "Avenir Roman";
+$fontSize: rem(14); // где 14(px) - размер шрифта по умолчанию из макета
+
+$breakpoints: (
+	mb320: 320px,
+	mb479: 479.98px,
+	mb480: 480px,
+	mb767: 767.98px,
+	tb768: 768px,
+	tb991: 991.98px,
+	tb992: 992px,
+	tb1199: 1199.98px,
+	dsk1200: 1200px,
+);
+
+
+$animation: 300ms ease-in;
