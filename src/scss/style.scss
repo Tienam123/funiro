@@ -9,8 +9,8 @@
 //-----------------------------------/ Mixins,Variables,Colors /---------------------------------------
 
 @import "vendor/mixins";
-@import "vendor/variables";
-@import "vendor/colors-pallete";
+@import "variables";
+@import "colors-pallete";
 @import "vendor/fonts";
 @import "fonts/icons";
 @import "spritemap";
@@ -25,9 +25,9 @@
 // Минимальная ширина страницы
 $minWidth: 280;
 // Ширина полотна (макета)
-$maxWidth: 1920;
+$maxWidth: 1440;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1376;
+$maxWidthContainer: 1270;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
 $containerPadding: 30;
@@ -68,7 +68,6 @@ body {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
-	overflow: hidden;
 	// Прижимаем footer
 	> main {
 		flex: 1 1 auto;
@@ -136,3 +135,5 @@ body {
 		--text-color: #ffffff;
 	}
 }
+
+@import "partials/header";
