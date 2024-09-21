@@ -1,0 +1,7 @@
+@use "sass:math";
+._footer-title {
+  color: #000;
+  font-weight: 800;
+  line-height: math.div(29,24)*100%;
+  font-size: 18px;
+}
