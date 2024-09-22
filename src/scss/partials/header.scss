@@ -1,10 +1,16 @@
 @use "sass:math";
 
 .header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  transition: background-color 300ms ease 0ms;
+  &.header-scrolled {
+    background-color: #F9F1E7;
+  }
   // .header__container
   &__container {
   }
-
   // .header__wrapper
   &__wrapper {
     position: relative;
@@ -15,7 +21,7 @@
     display: flex;
     align-items: center;
     padding: 5px 0;
-    min-height: 125px;
+    min-height: 90px;
     @media (max-width: $mobile) {
       min-height: 70px;
     }

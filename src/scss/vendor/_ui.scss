@@ -1,7 +1,69 @@
 @use "sass:math";
+
 ._footer-title {
   color: #000;
   font-weight: 800;
   line-height: math.div(29,24)*100%;
   font-size: 18px;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  text-align: center;
+  transition: all 300ms ease 0ms;
+  min-height: 48px;
+}
+
+.swiper-pagination-bullets {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.swiper-pagination-bullet {
+  cursor: pointer;
+  flex: 0 0 27px;
+  height: 27px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 0;
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+  &::after {
+  	content: "";
+  	position: absolute;
+  	width: 11px;
+  	height:11px;
+    transition: background-color 300ms ease 0ms;
+    background-color: #d8d8d8;
+    border-radius: 50%;
+
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid $orangeColor;
+    transition: all 30ms ease 0ms;
+    transform: scale(0);
+
+  }
+}
+
+.swiper-pagination-bullet-active {
+&::after {
+  background-color: $orangeColor;
+}
+  &::before {
+    transform: scale(1);
+  }
 }
