@@ -14,7 +14,7 @@ window.onload = function () {
     window.addEventListener('scroll', pageScrolled);
 
     function pageScrolled(e) {
-        if (window.scrollY > 50) { // Если прокрутили более чем на 50px
+        if (window.scrollY > 40) { // Если прокрутили более чем на 50px
             header.classList.add('header-scrolled'); // Добавляем класс
         } else {
             header.classList.remove('header-scrolled'); // Убираем класс

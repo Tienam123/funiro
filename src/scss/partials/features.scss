@@ -1,0 +1,84 @@
+@use "sass:math";
+.page {
+
+  // .page__features-section
+  &__features-section {
+    @include adaptiveValue("padding-top", 88,30);
+    @include adaptiveValue("padding-bottom", 88,30);
+  }
+}
+
+.features-section {
+  // .features-section__container
+  &__container {
+  }
+
+  // .features-section__list
+  &__list {
+    @media (min-width: $mobileSmall){
+    	  display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    @media (max-width: $mobile){
+    	  flex-wrap: wrap;
+    }
+  }
+
+  // .features-section__item
+  &__item {
+  @media (min-width: $tablet){
+  	  display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+    @media (max-width: $mobile){
+      min-width: 280px;
+    }
+  }
+
+  // .features-section__image
+  &__image {
+    display: inline-block;
+    font-size: 40px;
+    @media (max-width: $tablet){
+      margin-bottom: 10px;
+    }
+  }
+
+  // .features-section__content
+  &__content {
+  }
+}
+
+._icon-trophy {
+}
+
+.features-content {
+  // .features-content__title
+  &__title {
+    color: #3A3A3A;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  // .features-content__text
+  &__text {
+    color: #898989;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+}
+
+._icon-guarantee {
+}
+
+._icon-shipping {
+}
+
+._icon-customer-support {
+}
